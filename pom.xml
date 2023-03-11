@@ -35,6 +35,12 @@
         </dependency>
 
         <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>7.3.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
@@ -59,7 +65,7 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <!--    <testFailureIgnore>true</testFailureIgnore> -->
                     <includes>
-                        <include>**/CukesRunner*.java</include>
+                        <include>**/RoadRunner*.java</include>
                     </includes>
                 </configuration>
             </plugin>

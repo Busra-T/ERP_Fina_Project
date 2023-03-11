@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features = "",
+        features = "@target/rerun.txt",
         glue = "com/erp/step_definitions"
 
 )
