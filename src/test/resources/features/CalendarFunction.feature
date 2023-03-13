@@ -1,6 +1,6 @@
 Feature: Calendar functionality
 
-  @109
+  @109 @smoke @regression
   Scenario Outline: Calendar time list verification
     When Users login with their "<email>" and "<password>"
     And User should click on Calendar page

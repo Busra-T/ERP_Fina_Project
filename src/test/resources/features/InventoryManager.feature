@@ -1,7 +1,7 @@
 Feature: Inventory manager module access verification
   Agile Story: As an Inventory manager, I should be able to access to the main modules.
 
-  @99
+  @99 @smoke
   Scenario Template: Verify the Inventory managers access to 16 modules.
     When managers login with valid "<email>" and "<password>"
     Then see the correct "<login name>"

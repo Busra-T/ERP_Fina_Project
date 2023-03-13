@@ -3,7 +3,7 @@ Feature: Sales manager module functionality
 
 
 
-  @104
+  @104 @smoke
   Scenario Outline: Verify managers login with valid credentials, get their account names, and have access to the 19 modules.
     When Users login with their "<email>" and "<password>"
     Then Users see the correct "<account holder name>"

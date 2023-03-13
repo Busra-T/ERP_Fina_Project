@@ -1,7 +1,7 @@
 Feature: Repairs page function verification
   Agile Story: As a POS & sales manager, I want to access the Repairs page.
 
-  @97
+  @97 @regression
   Scenario Outline: Verify6 columns on the Repairs page when POS & sales managers login.
     When managers login with valid "<email>" and "<password>"
     Then click on Repairs

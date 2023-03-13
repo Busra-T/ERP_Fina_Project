@@ -1,6 +1,7 @@
 package com.erp.step_definitions;
 
 import com.erp.pages.CalendarPage;
+import com.erp.utilities.BrowserUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.sl.In;
@@ -22,6 +23,7 @@ public class Calendar_StepDefinitions {
     @Then("User should verify calendar time list starting from {string} til {string}, and is increased by one hour")
     public void userShouldVerifyCalendarTimeListStartingFromTilAndIsIncreasedByOneHour(String beginning, String end, List<String> hours) {
 
+        BrowserUtils.waitForPageToLoad(20);
         List<String> actualHours=new ArrayList<>();
 
         for (WebElement each :page.times) {
