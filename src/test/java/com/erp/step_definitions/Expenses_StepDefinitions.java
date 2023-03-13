@@ -23,6 +23,8 @@ public class Expenses_StepDefinitions extends BasePage {
         }
         Assert.assertEquals(modules,actual);
 
+        // rest of it ==> verification for access by clicking one by one
+
         for (WebElement eachModule : mainMenu) {
             if(eachModule.getText().equals("Website")){
                 continue;

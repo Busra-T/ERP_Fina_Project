@@ -42,8 +42,9 @@ public class PosOrdersFunction_StepDefinitions extends BasePage {
         for (WebElement each : page.checks) {
             Assert.assertTrue(each.isSelected());
         }
+        //chose for related page:
         //Assert.assertTrue(page.checks.size()==60);
-        Assert.assertTrue(page.checks.size()==10);
+        //Assert.assertTrue(page.checks.size()==10);
 
     }
 

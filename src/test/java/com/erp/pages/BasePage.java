@@ -41,24 +41,6 @@ public abstract class BasePage {
     public WebElement cbox_orderRef;
 
 
-
-
-
-
-
-
-  /*  @FindBy()
-    public WebElement ;
-
-    @FindBy()
-    public WebElement ;
-
-    @FindBy()
-    public WebElement ;
-
-    @FindBy()
-    public WebElement ; */
-
     public void login(String email, String password){
         input_email.sendKeys(email);
         input_password.sendKeys(password);

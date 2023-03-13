@@ -12,7 +12,7 @@ Feature:Documentation page function verification
       | User Docs            |
       | Install and Maintain |
       | Developer            |
-      | Contributing           |
+      | Contributing         |
     # it should be Contribute
 
     Examples:

@@ -18,7 +18,7 @@ Feature: Expenses manager modules functionality
       | Lunch       |
       | Maintenance |
       | Dashboards  |
-    #website, lunch
+    # website and lunch modules have bugs
 
     Examples:
       | email                      | password        | login name        |
