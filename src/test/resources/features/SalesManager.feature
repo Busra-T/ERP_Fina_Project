@@ -7,7 +7,7 @@ Feature: Sales manager module functionality
   Scenario Outline: Verify managers login with valid credentials, get their account names, and have access to the 19 modules.
     When Users login with their "<email>" and "<password>"
     Then Users see the correct "<account holder name>"
-    And should have access to the below modules
+    And should have access to the all below modules
       | Discuss         |
       | Calendar        |
       | Notes           |

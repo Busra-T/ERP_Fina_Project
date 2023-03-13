@@ -25,8 +25,12 @@ public abstract class BasePage {
     @FindBy(className = "oe_topbar_name")
     public WebElement accountHolder;
 
-    @FindBy(xpath = "//li[@style='display: block;']")
+/*    @FindBy(xpath = "//li[@style='display: block;']")
     public List<WebElement> mainMenu;
+
+ */
+    @FindBy(xpath = "//li[@style='display: block;']//span[@class='oe_menu_text']")
+    public List<WebElement>mainMenu;
 
     @FindBy(xpath = "(//span[contains(.,'Events')])[1]")
     public WebElement events;
@@ -39,6 +43,10 @@ public abstract class BasePage {
 
     @FindBy(xpath = "//th[@class='o_list_record_selector']")
     public WebElement cbox_orderRef;
+
+    @FindBy(xpath ="//li[@id='menu_more_container']" )
+    public WebElement moreClick;
+
 
 
     public void login(String email, String password){

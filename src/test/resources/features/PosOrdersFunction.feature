@@ -3,6 +3,7 @@ Feature: POS order view function
   Agile Story: As a Point of Sale manager (POS), I should be able to view product order.
 
 
+  @100
   Scenario: Verify Action dropdown 2 options: Export and Delete
 
     When user logged in as POS manager

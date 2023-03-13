@@ -14,6 +14,10 @@ InventoryPage inv=new InventoryPage();
 
     @And("should have access to below modules")
     public void shouldHaveAccessToBelowModules(List<String >modules) {
+        if(inv.moreClick.isEnabled()){
+            inv.moreClick.click();
+        }
+
         List<String >actual=new ArrayList<>();
 
         for (WebElement each : inv.mainMenu) {

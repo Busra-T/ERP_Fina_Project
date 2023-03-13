@@ -23,7 +23,7 @@ public class Calendar_StepDefinitions {
     @Then("User should verify calendar time list starting from {string} til {string}, and is increased by one hour")
     public void userShouldVerifyCalendarTimeListStartingFromTilAndIsIncreasedByOneHour(String beginning, String end, List<String> hours) {
 
-        BrowserUtils.waitForPageToLoad(20);
+        BrowserUtils.waitForTitleContains("Meetings");
         List<String> actualHours=new ArrayList<>();
 
         for (WebElement each :page.times) {
