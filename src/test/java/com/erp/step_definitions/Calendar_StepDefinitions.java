@@ -27,6 +27,7 @@ public class Calendar_StepDefinitions {
         List<String> actualHours=new ArrayList<>();
 
         for (WebElement each :page.times) {
+            BrowserUtils.waitForTitleContains("Meetings");
             actualHours.add(each.getText());
         }
 
