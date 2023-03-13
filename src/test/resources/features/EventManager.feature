@@ -1,4 +1,4 @@
-Feature: Event manager module functionality
+Feature: Event manager modules functionality
   Agile Story: As an Event manager, I want to access to the different modules.
 
  @102

@@ -28,6 +28,16 @@ public abstract class BasePage {
     @FindBy(xpath = "//li[@style='display: block;']")
     public List<WebElement> mainMenu;
 
+    @FindBy(xpath = "(//span[contains(.,'Events')])[1]")
+    public WebElement events;
+
+    @FindBy(xpath = "(//span[contains(.,'Website')])[1]")
+    public WebElement Website;
+
+
+
+
+
 
 
   /*  @FindBy()
