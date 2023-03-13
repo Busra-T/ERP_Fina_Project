@@ -34,6 +34,13 @@ public abstract class BasePage {
     @FindBy(xpath = "(//span[contains(.,'Website')])[1]")
     public WebElement Website;
 
+    @FindBy(xpath = "//td/div/input[@type='checkbox']")
+    public List<WebElement> checks;
+
+    @FindBy(xpath = "//th[@class='o_list_record_selector']")
+    public WebElement cbox_orderRef;
+
+
 
 
 

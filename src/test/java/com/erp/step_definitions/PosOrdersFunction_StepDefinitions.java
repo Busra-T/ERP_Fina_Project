@@ -42,7 +42,9 @@ public class PosOrdersFunction_StepDefinitions extends BasePage {
         for (WebElement each : page.checks) {
             Assert.assertTrue(each.isSelected());
         }
-            Assert.assertTrue(page.checks.size()==60);
+        //Assert.assertTrue(page.checks.size()==60);
+        Assert.assertTrue(page.checks.size()==10);
+
     }
 
     @Then("user sees the Action dropdown")

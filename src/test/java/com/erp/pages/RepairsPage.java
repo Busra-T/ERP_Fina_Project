@@ -29,6 +29,9 @@ public class RepairsPage extends BasePage{
         return columnsTexts;
     }
 
+    @FindBy(xpath = "//thead/tr/th/div//input[@type='checkbox']")
+    public WebElement clickAll;
+
 
 
 }

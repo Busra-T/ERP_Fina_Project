@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PosOrdersPage {
+public class PosOrdersPage extends BasePage{
 
     public PosOrdersPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -24,14 +24,7 @@ public class PosOrdersPage {
     public WebElement opt_orders ;
 
 
-    @FindBy(xpath = "//th[@class='o_list_record_selector']")
-    public WebElement cbox_orderRef;
 
-    @FindBy(xpath = "//td/div/input[@type='checkbox']")
-    public WebElement allOrders ;
-
-    @FindBy(xpath = "//td/div/input[@type='checkbox']")
-    public List<WebElement> checks;
 
     @FindBy(xpath = "(//div[@class=\"btn-group o_dropdown\"])[2]")
     public WebElement action;
