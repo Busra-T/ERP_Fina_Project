@@ -17,5 +17,5 @@ public class DocumentationPage extends BasePage {
     @FindBy(tagName = "h2")
     public List<WebElement> docTopics;
 
-
+    
 }
